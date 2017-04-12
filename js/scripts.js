@@ -560,44 +560,7 @@ function videos() {
 	});
 }
 
-window.comeetInit = function() {
-	COMEET.init({
-		"token":       "1715C47357355C45C4A17CF9CF9735",
-		"company-uid": "71.001",
-		"company-name": "Natural Intelligence",
-		"color":       "278fe6",
-		"font-size":   "13px",
-		"thankyou-url": "http://www.naturalint.com/careers"
-	});
-};
-
-(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) {
-		return;
-	}
-	js = d.createElement(s);
-	js.id = id;
-	js.src = "//www.comeet.co/careers-api/api.js";
-	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'comeet-jsapi'));
-
-
-/*    --------------------------- */
-
 $(document).ready(function(){
-	$( "a.orange" ).each(function() {
-		$(this).on("click", function(){
-			if($(".applyjob").is(':hidden'))
-			{
-				$(".applyjob").show();
-			}
-			else {
-				$(".applyjob").hide();
-			}
-		});
-	});
-
 
 
 	$('.fancybox-media').fancybox({
@@ -641,28 +604,4 @@ $(document).ready(function(){
 });
 
 
-
-function successApply(){
-	if (typeof window.google_trackConversion != 'undefined') {
-		window.google_trackConversion({
-			google_conversion_id: 1007895195,
-			google_conversion_language : "en",
-			google_conversion_format : "3",
-			google_conversion_color : "ffffff",
-			google_conversion_label : "6zClCNfOuGcQm4XN4AM",
-			google_remarketing_only : false
-		});
-	}
-}
-
-function customMessageOn(event, callback) {
-	if ("function" == typeof callback) {
-		var filterCallback = function (e) {
-			e.data && e.data.event == event && callback(e.data.data)
-		};
-		window.addEventListener ? window.addEventListener("message", filterCallback, !1) : window.attachEvent("onmessage", filterCallback)
-	}
-}
-
-customMessageOn("comeet.applyForm.success",successApply);
 

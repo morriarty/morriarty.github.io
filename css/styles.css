@@ -789,7 +789,8 @@ aside {display:block;}
 	z-index: 5;
 	width: 980px;
 	height: 520px;
-	background: url(../images/bg-map.png) no-repeat 50% 50%;
+	background: url(../images/worldmap.png) no-repeat 50% 50%;
+	background-size: 100%;
 	-webkit-transition: all 2s ease 0.5s;
 	-o-transition: all 2s ease 0.5s;
 	transition: all 2s ease 0.5s;
@@ -870,7 +871,7 @@ aside {display:block;}
 	bottom: 0;
 	width: 60px;
 	height: 1px;
-	background: #f58a2d;
+	background: #0085ba;
 	margin: 0 0 0 -30px;
 }
 .statistics .stat-list .value span {
@@ -878,7 +879,7 @@ aside {display:block;}
 }
 .statistics .stat-list .str {
 	display: block;
-	color: #7f8485;
+	color: #2a3035;
 }
 /* fixed-menu */
 .fixed-menu {

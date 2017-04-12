@@ -991,7 +991,7 @@ aside {display:block;}
 	display: inline-block;
 	vertical-align: top;
     /*width: 25%;*/
-    width: 33.3%;
+    width: 50%;
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -1002,7 +1002,7 @@ aside {display:block;}
     width: 25%;
 }
 .video-list > li:hover {
-	width: 50%;
+	width: 75%;
 }
 .video-list figure {
 	margin: 0;
